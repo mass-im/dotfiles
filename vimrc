@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'bling/vim-bufferline'
 Bundle 'bling/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 Bundle 'cakebaker/scss-syntax.vim'
 
 filetype plugin indent on " required!
@@ -19,6 +20,11 @@ filetype plugin indent on " required!
 " Solarized settings
 set background=dark
 colorscheme solarized
+
+" Airline settings
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
+let g:airline_powerline_fonts=1
 
 " Some defaults
 set number
@@ -53,6 +59,5 @@ set expandtab
 
 " Bufferline is also printing to statusline, do not want :F
 let g:bufferline_echo = 0
-let g:airline_powerline_fonts=1
 
 syntax on
