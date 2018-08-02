@@ -12,7 +12,8 @@
 .vim/bundle/*
 # But do install vundle
 !.vim/bundle/vundle
-
+# Keep my color setup
+!.vim/colors
 # Also keep addons
 !addons/
 
