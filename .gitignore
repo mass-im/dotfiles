@@ -12,6 +12,9 @@
 # But do install vundle
 !.vim/bundle/vundle
 
+# Also keep addons
+±.addons/
+
 # I like zsh
 !.oh-my-zsh
 !.zshrc
