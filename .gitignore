@@ -3,6 +3,7 @@
 
 # Know what to add
 !.gitignore
+!.gitsubmodules
 
 # I like vim
 !.vim/
@@ -13,7 +14,7 @@
 !.vim/bundle/vundle
 
 # Also keep addons
-±.addons/
+!addons/
 
 # I like zsh
 !.oh-my-zsh
