@@ -1,5 +1,3 @@
 #aliases
-alias own="sudo chown -R tim:staff"
+alias own="sudo chown -R massim:staff"
 alias disown="sudo chown -R www-data:www-data"
-alias edit-zsh="nano ~/.zshrc"
-alias edit-alias="nano ~/.aliases"

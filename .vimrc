@@ -53,8 +53,8 @@ set confirm
 set mouse=a
 
 " Indentation settings for using 4 spaces instead of tabs.
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 
 " Bufferline is also printing to statusline, do not want :F
