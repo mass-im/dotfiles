@@ -4,6 +4,7 @@
 # Know what to add
 !.gitignore
 !.gitsubmodules
+!README.md
 
 # I like vim
 !.vim/
