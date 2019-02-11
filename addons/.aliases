@@ -1,3 +1,4 @@
 #aliases
 alias own="sudo chown -R massim:staff"
 alias disown="sudo chown -R www-data:www-data"
+alias vi="vim"
