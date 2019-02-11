@@ -14,7 +14,8 @@ Bundle 'bling/vim-bufferline'
 Bundle 'bling/vim-airline'
 Bundle 'vim-airline/vim-airline-themes'
 Bundle 'cakebaker/scss-syntax.vim'
-Plugin 'Valloric/YouCompleteMe'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'kien/ctrlp'
 
 filetype plugin indent on " required!
 
