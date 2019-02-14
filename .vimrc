@@ -17,6 +17,8 @@ Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'kien/ctrlp'
 
+call vundle#end()
+
 filetype plugin indent on " required!
 
 " Solarized settings
