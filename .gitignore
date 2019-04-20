@@ -9,6 +9,8 @@
 # I like vim
 !.vim/
 !.vimrc
+# And Tmux
+!.tmux.conf
 # Ignore bundles though
 .vim/bundle/*
 # But do install vundle
