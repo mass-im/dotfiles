@@ -9,13 +9,13 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Github repos
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'bling/vim-bufferline'
-Bundle 'bling/vim-airline'
-Bundle 'vim-airline/vim-airline-themes'
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'kien/ctrlp'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'bling/vim-bufferline'
+Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
@@ -29,6 +29,9 @@ colorscheme solarized
 let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
 let g:airline_powerline_fonts=1
+set t_Co=256
+
+set clipboard=unnamed
 
 " Some defaults
 set number
@@ -63,5 +66,8 @@ set expandtab
 
 " Bufferline is also printing to statusline, do not want :F
 let g:bufferline_echo = 0
+
+" Ignore certain files
+let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|\.git\|\.hg\|\.svn\|dist'
 
 syntax on
