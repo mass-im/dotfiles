@@ -11,6 +11,7 @@
 !.vimrc
 # And Tmux
 !.tmux.conf
+!.config/
 # Ignore bundles though
 .vim/bundle/*
 # But do install vundle
