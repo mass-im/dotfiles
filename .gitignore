@@ -12,12 +12,9 @@
 # And Tmux
 !.tmux.conf
 !.config/
-# Ignore bundles though
-.vim/bundle/*
-# But do install vundle
-!.vim/bundle/vundle
-# Keep my color setup
-!.vim/colors
+# Dont include installed plugins
+plugged/
+
 # Also keep addons
 !addons/
 
