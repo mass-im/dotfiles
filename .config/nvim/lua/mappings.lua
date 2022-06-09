@@ -48,6 +48,18 @@ nnoremap('<leader>t', '<cmd>Telescope find_files<cr>')
 nnoremap('<leader>g', '<cmd>Telescope live_grep<cr>')
 nnoremap(';', '<cmd>Telescope buffers<cr>')
 nnoremap('<leader>f', '<cmd>Telescope tags<cr>')
+
+local actions = require("telescope.actions")
+require('telescope').setup{
+    defaults = {
+        mappings = {
+            i = {
+                ["<esc>"] = actions.close
+            }
+        }
+    }
+}
+
 -- TODO make this part of my workflow
 -- nnoremap('', '<cmd>Telescope marks<cr>')
 
