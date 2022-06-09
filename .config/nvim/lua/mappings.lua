@@ -1,4 +1,4 @@
-------------------------------------------------------------- == Utils ==
+-- == Utils ==
 -- Collection of functions for easier mapping
 
 function map(mode, shortcut, command)
@@ -37,6 +37,9 @@ function tmap(shortcut, command)
   map('t', shortcut, command)
 end
 
+-- Ctags
+nnoremap('<f5>', ':!ctags -R<cr>')
+
 -- == Plugins ==
 
 -- == Telescope ==
@@ -44,6 +47,12 @@ local Telescope = require 'telescope.builtin'
 nnoremap('<leader>t', '<cmd>Telescope find_files<cr>')
 nnoremap('<leader>g', '<cmd>Telescope live_grep<cr>')
 nnoremap(';', '<cmd>Telescope buffers<cr>')
+nnoremap('<leader>f', '<cmd>Telescope tags<cr>')
 -- TODO make this part of my workflow
--- nnoremap('', '<cmd>Telescope tags<cr>')
 -- nnoremap('', '<cmd>Telescope marks<cr>')
+
+-- == COC ==
+vim.cmd[[
+    inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+    inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+]]
