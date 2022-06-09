@@ -93,6 +93,9 @@ require('telescope').setup{
     },
 }
 
+-- Make Telescope use fzf
+require('telescope').load_extension('fzf')
+
 -- Echodoc
 vim.g['echodoc#enable_at_startup'] = true
 
@@ -110,4 +113,7 @@ augroup END
 
 -- Colors and schemes
 vim.o.termguicolors = true
-vim.cmd('colorscheme OceanicNext')
+vim.cmd[[
+    syntax enable
+    colorscheme OceanicNext
+]]
