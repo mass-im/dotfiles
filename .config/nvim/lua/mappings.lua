@@ -54,7 +54,8 @@ require('telescope').setup{
     defaults = {
         mappings = {
             i = {
-                ["<esc>"] = actions.close
+                ["<esc>"] = actions.close,
+                ["<C-o>"] = function() vim.cmd ":stopinsert" end,
             }
         }
     }

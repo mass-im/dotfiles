@@ -87,6 +87,7 @@ require('telescope').setup{
         },
         buffers = {
             theme = 'ivy',
+            initial_mode = 'normal',
             previewer = false,
         }
     },
