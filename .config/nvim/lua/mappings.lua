@@ -50,12 +50,14 @@ nnoremap(';', '<cmd>Telescope buffers<cr>')
 nnoremap('<leader>f', '<cmd>Telescope tags<cr>')
 
 local actions = require("telescope.actions")
+local layout_actions = require("telescope.actions.layout")
 require('telescope').setup{
     defaults = {
         mappings = {
             i = {
                 ["<esc>"] = actions.close,
                 ["<C-o>"] = function() vim.cmd ":stopinsert" end,
+                ["<C-p>"] = layout_actions.toggle_preview,
             }
         }
     }
