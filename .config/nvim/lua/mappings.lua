@@ -46,7 +46,7 @@ nnoremap('<f5>', ':!ctags -R<cr>')
 local Telescope = require 'telescope.builtin'
 nnoremap('<leader>t', '<cmd>Telescope find_files<cr>')
 nnoremap('<leader>g', '<cmd>Telescope live_grep<cr>')
-nnoremap(';', '<cmd>Telescope buffers<cr>')
+nnoremap(';', ":lua require'telescope.builtin'.buffers({sort_lastused=true})<cr>")
 nnoremap('<leader>f', '<cmd>Telescope tags<cr>')
 
 local actions = require("telescope.actions")
