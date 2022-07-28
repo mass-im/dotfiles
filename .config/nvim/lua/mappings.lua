@@ -42,12 +42,14 @@ nnoremap('<f5>', ':!ctags -R<cr>')
 
 -- == Plugins ==
 
+-- == Tagbar ==
+nmap('<leader>f', '<cmd>:TagbarToggle<cr>')
+
 -- == Telescope ==
 local Telescope = require 'telescope.builtin'
 nnoremap('<leader>t', '<cmd>Telescope find_files<cr>')
 nnoremap('<leader>g', '<cmd>Telescope live_grep<cr>')
 nnoremap(';', ":lua require'telescope.builtin'.buffers({sort_lastused=true})<cr>")
-nnoremap('<leader>f', '<cmd>Telescope tags<cr>')
 
 local actions = require("telescope.actions")
 local layout_actions = require("telescope.actions.layout")

@@ -102,6 +102,9 @@ vim.g['echodoc#enable_at_startup'] = true
 -- Signify
 vim.g.signify_sign_delete = '-'
 
+-- Tagbar
+vim.g.tagbar_autoclose = true
+
 -- markdown
 -- set markdown linewrapping
 vim.cmd([[
