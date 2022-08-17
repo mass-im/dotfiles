@@ -13,6 +13,9 @@ vim.o.mouse = 'a' -- enable mouse usage in all modes
 -- Command mode
 vim.o.wildmenu = true -- expand vim commands in command line on tab
 
+-- Clipboard
+vim.opt.clipboard = 'unnamedplus'
+
 -- Timeouts
 vim.o.timeout = false
 vim.o.ttimeout = true
