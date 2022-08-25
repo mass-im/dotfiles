@@ -18,10 +18,6 @@ Plug 'Shougo/echodoc.vim' -- Show function signature in command/echo area
 Plug 'nvim-lua/plenary.nvim' -- Lua functions used by Telescope ('all the functions you dont want to write twice')
 Plug 'nvim-telescope/telescope.nvim'
 
--- == ctags ==
-Plug 'ternjs/tern_for_vim'
-Plug 'preservim/tagbar'
-
 -- Both Telescope and markdown-preview use 'do' which I didnt write support for yet in the Plug helper methods
 vim.cmd[[
 	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }

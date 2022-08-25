@@ -42,9 +42,6 @@ nnoremap('<f5>', ':!ctags -R<cr>')
 
 -- == Plugins ==
 
--- == Tagbar ==
-nmap('<leader>f', '<cmd>:TagbarToggle<cr>')
-
 -- == Telescope ==
 local Telescope = require 'telescope.builtin'
 nnoremap('<leader>t', '<cmd>Telescope find_files<cr>')
@@ -70,6 +67,10 @@ require('telescope').setup{
 
 -- == COC ==
 vim.cmd[[
+    nmap <silent> gd <Plug>(coc-definition)
+    nmap <silent> gy <Plug>(coc-type-definition)
+    nmap <silent> gi <Plug>(coc-implementation)
+    nmap <silent> gr <Plug>(coc-references)
     inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
     inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 ]]
